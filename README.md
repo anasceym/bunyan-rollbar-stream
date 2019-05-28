@@ -1,3 +1,3 @@
-# bunyan-rollbar-stream-2
+# bunyan-rollbar-stream
 
 Sends bunyan logs to Rollbar

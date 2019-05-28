@@ -1,11 +1,11 @@
 {
-  "name": "bunyan-rollbar-stream-2",
+  "name": "bunyan-rollbar-stream",
   "version": "1.0.0",
   "description": "Sends bunyan logs to Rollbar",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "https://github.com/anasceym/bunyan-rollbar-stream-2",
+  "repository": "https://github.com/anasceym/bunyan-rollbar-stream",
   "license": "MIT",
   "keywords": [],
   "scripts": {
