@@ -1,1 +1,1 @@
-export * from './lib/number';
+export * from './lib/create-bunyan-rollbar-stream'
