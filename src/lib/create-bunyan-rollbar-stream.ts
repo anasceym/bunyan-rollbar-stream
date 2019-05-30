@@ -5,12 +5,12 @@ interface Options {
 }
 
 const nameFromLevel: { [index: number]: string } = {
-  10: 'trace',
+  10: 'debug',
   20: 'debug',
   30: 'info',
-  40: 'warn',
+  40: 'warning',
   50: 'error',
-  60: 'fatal'
+  60: 'critical'
 }
 
 const BunyanRollbarStream = function(this: any, options: Options) {

@@ -258,3 +258,38 @@ test.serial('With err, req, and custom parameter', t => {
   t.pass()
   mockedRollbar.reset()
 })
+
+test.serial('Using log.fatal from bunyan, sends rollbar as critical', t => {
+  // Prepare
+  const msg = 'hello world!'
+  const logLevel = 'fatal'
+  const rollbar = new Rollbar({
+    accessToken: 'POST_SERVER_ITEM_ACCESS_TOKEN'
+  })
+
+  const mockedRollbar: TypeMoq.IMock<Rollbar> = TypeMoq.Mock.ofInstance(
+    rollbar
+  )
+  mockedRollbar.setup(x => x.critical())
+
+  const logger = bunyan.createLogger({
+    level: logLevel,
+    name: 'myapp',
+    stream: new (BunyanRollbarStream as any)({
+      rollbar: mockedRollbar.object
+    })
+  })
+
+  // Action
+  logger[logLevel](msg)
+
+  // Assert
+  try {
+    mockedRollbar.verify(x => x.critical(msg), TypeMoq.Times.atLeastOnce())
+  } catch (err) {
+    t.fail(err)
+  }
+
+  t.pass()
+  mockedRollbar.reset()
+})
