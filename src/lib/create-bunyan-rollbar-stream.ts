@@ -1,7 +1,7 @@
 import Rollbar from 'rollbar'
 
 interface Options {
-  rollbar?: Rollbar
+  rollbar: Rollbar
 }
 
 const nameFromLevel: { [index: number]: string } = {
@@ -13,8 +13,8 @@ const nameFromLevel: { [index: number]: string } = {
   60: 'fatal'
 }
 
-const BunyanRollbarStream = function(this: any, options?: Options) {
-  options = options || {}
+const BunyanRollbarStream = function(this: any, options: Options) {
+  options = options
 
   if (options.rollbar) {
     this.rollbar = options.rollbar
