@@ -2,7 +2,8 @@
 
 > Bunyan stream for sending Rollbar
 
-[![NPM][https://nodei.co/npm/bunyan-rollbar-stream.svg?downloads=true]][https://npmjs.org/package/bunyan-rollbar-stream]
+[![NPM][npm-icon]][npm-url]
+
 
 ## Install
 
@@ -39,3 +40,6 @@
   // This line will automatically sends error to Rollbar
   log.error({ err: new Error('Error') }, 'Some error occurred')
   ```
+
+[npm-icon]: https://nodei.co/npm/bunyan-rollbar-stream.svg?downloads=true
+[npm-url]: https://npmjs.org/package/bunyan-rollbar-stream
