@@ -2,7 +2,8 @@
 
 > Bunyan stream for sending Rollbar
 
-[![NPM][npm-icon]][npm-url]
+[![NPM][npm-icon]][npm-url] 
+[![Build Status][travis-icon]][travis-url]
 
 
 ## Install
@@ -43,3 +44,5 @@
 
 [npm-icon]: https://nodei.co/npm/bunyan-rollbar-stream.svg?downloads=true
 [npm-url]: https://npmjs.org/package/bunyan-rollbar-stream
+[travis-icon]: https://travis-ci.org/anasceym/bunyan-rollbar-stream.svg?branch=master
+[travis-url]: https://travis-ci.org/anasceym/bunyan-rollbar-stream
