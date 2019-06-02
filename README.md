@@ -1,10 +1,6 @@
-# bunyan-rollbar-stream
+# bunyan-rollbar-stream [![Build Status][travis-badge]][travis-url] [![codecov][codecov-badge]][codecov-url] [![npm][npm-badge]][npm-url]
 
 > Bunyan stream for sending Rollbar
-
-[![NPM][npm-icon]][npm-url] 
-[![Build Status][travis-icon]][travis-url]
-
 
 ## Install
 
@@ -43,7 +39,9 @@ var log = bunyan.createLogger({
 log.error({ err: new Error('Error') }, 'Some error occurred')
 ```
 
-[npm-icon]: https://nodei.co/npm/bunyan-rollbar-stream.svg?downloads=true
-[npm-url]: https://npmjs.org/package/bunyan-rollbar-stream
-[travis-icon]: https://travis-ci.org/anasceym/bunyan-rollbar-stream.svg?branch=master
-[travis-url]: https://travis-ci.org/anasceym/bunyan-rollbar-stream
+[travis-badge]:https://travis-ci.org/anasceym/bunyan-rollbar-stream.svg?branch=master
+[travis-url]:https://travis-ci.org/anasceym/bunyan-rollbar-stream
+[codecov-badge]:https://codecov.io/gh/anasceym/bunyan-rollbar-stream/branch/master/graph/badge.svg
+[codecov-url]:https://codecov.io/gh/anasceym/bunyan-rollbar-stream
+[npm-badge]:https://img.shields.io/npm/v/bunyan-rollbar-stream.svg
+[npm-url]:https://www.npmjs.com/package/bunyan-rollbar-stream
