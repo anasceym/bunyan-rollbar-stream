@@ -24,9 +24,7 @@ test.serial('Normal scene', t => {
     accessToken: 'POST_SERVER_ITEM_ACCESS_TOKEN'
   })
 
-  const mockedRollbar: TypeMoq.IMock<Rollbar> = TypeMoq.Mock.ofInstance(
-    rollbar
-  )
+  const mockedRollbar: TypeMoq.IMock<Rollbar> = TypeMoq.Mock.ofInstance(rollbar)
   mockedRollbar.setup(x => x[logLevel]())
 
   const logger = bunyan.createLogger({
@@ -60,9 +58,7 @@ test.serial('With err object', t => {
     accessToken: 'POST_SERVER_ITEM_ACCESS_TOKEN'
   })
 
-  const mockedRollbar: TypeMoq.IMock<Rollbar> = TypeMoq.Mock.ofInstance(
-    rollbar
-  )
+  const mockedRollbar: TypeMoq.IMock<Rollbar> = TypeMoq.Mock.ofInstance(rollbar)
   mockedRollbar.setup(x => x[logLevel]())
 
   const logger = bunyan.createLogger({
@@ -117,9 +113,7 @@ test.serial('With req object', t => {
     accessToken: 'POST_SERVER_ITEM_ACCESS_TOKEN'
   })
 
-  const mockedRollbar: TypeMoq.IMock<Rollbar> = TypeMoq.Mock.ofInstance(
-    rollbar
-  )
+  const mockedRollbar: TypeMoq.IMock<Rollbar> = TypeMoq.Mock.ofInstance(rollbar)
   mockedRollbar.setup(x => x[logLevel]())
 
   const logger = bunyan.createLogger({
@@ -165,9 +159,7 @@ test.serial('With custom parameter', t => {
     accessToken: 'POST_SERVER_ITEM_ACCESS_TOKEN'
   })
 
-  const mockedRollbar: TypeMoq.IMock<Rollbar> = TypeMoq.Mock.ofInstance(
-    rollbar
-  )
+  const mockedRollbar: TypeMoq.IMock<Rollbar> = TypeMoq.Mock.ofInstance(rollbar)
   mockedRollbar.setup(x => x[logLevel]())
 
   const logger = bunyan.createLogger({
@@ -217,9 +209,7 @@ test.serial('With err, req, and custom parameter', t => {
     accessToken: 'POST_SERVER_ITEM_ACCESS_TOKEN'
   })
 
-  const mockedRollbar: TypeMoq.IMock<Rollbar> = TypeMoq.Mock.ofInstance(
-    rollbar
-  )
+  const mockedRollbar: TypeMoq.IMock<Rollbar> = TypeMoq.Mock.ofInstance(rollbar)
   mockedRollbar.setup(x => x[logLevel]())
 
   const logger = bunyan.createLogger({
@@ -267,9 +257,7 @@ test.serial('Using log.fatal from bunyan, sends rollbar as critical', t => {
     accessToken: 'POST_SERVER_ITEM_ACCESS_TOKEN'
   })
 
-  const mockedRollbar: TypeMoq.IMock<Rollbar> = TypeMoq.Mock.ofInstance(
-    rollbar
-  )
+  const mockedRollbar: TypeMoq.IMock<Rollbar> = TypeMoq.Mock.ofInstance(rollbar)
   mockedRollbar.setup(x => x.critical())
 
   const logger = bunyan.createLogger({
